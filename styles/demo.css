@@ -1,0 +1,124 @@
+:root {
+  --color-primary: #eb5e28;
+  --color-secondary: #252422;
+  --color-tertiary: #403d39;
+  --color-quaternary: #000;
+  --color-quinary: #f8f8f8;
+  --color-senary: #dbe1e8;
+  --color-septenary: #b2becd;
+  --color-octonary: #6c7983;
+  --color-denary: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #f56692;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
+
+/* ================================
+   🎨 Portfolio Website Color System
+   ================================ */
+
+/* 1. Color Variables (Easy to manage) */
+:root {
+  --color-bg: #f9f9f9; /* Background (neutral, calm) */
+  --color-text: #2d2d2d; /* Main text */
+  --color-primary: #6c63ff; /* Buttons, links */
+  --color-secondary: #00c9a7; /* Hovers, icons */
+  --color-accent: #ff6584; /* Highlights, special elements */
+  --color-shadow: rgba(0, 0, 0, 0.12); /* Soft shadow */
+}
+
+section {
+  height: 100vh;
+}
+
+/* 2. Background + Base */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* 3. Headings & Paragraphs */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+p {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+/* 4. Buttons */
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  z-index: 9;
+}
+.button {
+  height: 50px;
+  width: 50px;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2rem;
+  box-shadow: 0px 4px 8px var(--color-shadow);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.button:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+.button:active {
+  background: var(--color-accent);
+  transform: translateY(0);
+}
+
+/* 5. Accent Highlight (for important words/links) */
+.highlight {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* 6. Card Example (Projects, Skills, etc.) */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0px 6px 12px var(--color-shadow);
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
