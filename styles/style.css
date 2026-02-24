@@ -539,11 +539,31 @@ section {
   margin: 1rem 0;
   line-height: 2rem;
 }
-.contact-content-con .left-contact .contact-info .contact-item {
+/* .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+} */
+
+/* -----------------following code is used for dis-alignment -------------*/
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  margin-bottom: 0.8rem;
 }
+
+/* .contact-content-con .left-contact .contact-info .contact-item {
+  display: grid;
+  grid-template-columns: 220px 20px 1fr;
+  align-items: start;
+}
+
+.colon {
+  text-align: center;
+} */
+/* ------------------experiment end----------------- */
+
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
   padding: 0 !important;
